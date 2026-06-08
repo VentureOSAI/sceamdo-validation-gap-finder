@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -6,88 +6,77 @@
 <meta name="description" content="Diagnose your startup validation gap in 3 minutes. Find out if you have real demand or just interest — before you build.">
 <title>The Validation Gap Finder | Sceamdo Technologies</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root {
-  --navy: #0F3460;
-  --red: #E94560;
-  --red-dim: #c73a52;
-  --bg: #07111F;
-  --surface: #0e1f33;
-  --surface2: #152843;
-  --border: rgba(255,255,255,0.08);
-  --text: #EEF2FF;
-  --muted: rgba(238,242,255,0.55);
-  --green: #52c77a;
-  --amber: #f5c842;
+:root{
+  --bg:#F8F7F4;
+  --white:#FFFFFF;
+  --navy:#003049;
+  --navy2:#00202f;
+  --red:#E94560;
+  --red2:#c73a52;
+  --text:#1A1A1A;
+  --muted:#5A5A5A;
+  --light:#F0EDE8;
+  --border:#E0DAD0;
+  --green:#1A7A3E;
+  --amber:#B8860B;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
-/* HEADER */
-.hdr{background:var(--navy);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(233,69,96,0.3)}
-.hdr img{height:38px}
-.hdr-tag{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);border:1px solid var(--red);padding:4px 12px;border-radius:2px}
-/* HERO */
-.hero{background:linear-gradient(135deg,var(--navy) 0%,#1a0f2e 60%,#2d0f1f 100%);padding:52px 24px 44px;text-align:center;position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E94560' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");pointer-events:none}
-.eyebrow{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:14px}
-.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(28px,5vw,46px);line-height:1.15;margin-bottom:12px}
-.hero h1 em{font-style:italic;color:var(--red)}
-.hero p{font-size:15px;color:var(--muted);max-width:520px;margin:0 auto 20px;line-height:1.7}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;line-height:1.6}
+.hdr{background:var(--navy);padding:14px 28px;display:flex;align-items:center;justify-content:space-between}
+.hdr img{height:40px}
+.hdr-tag{font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.2);padding:4px 12px;border-radius:2px}
+.hero{background:var(--navy);color:white;padding:52px 24px 48px;text-align:center}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:14px;opacity:.9}
+.hero h1{font-size:clamp(26px,4.5vw,42px);font-weight:700;line-height:1.15;margin-bottom:14px}
+.hero h1 em{font-style:normal;color:#FCBF49}
+.hero p{font-size:14px;color:rgba(255,255,255,0.72);max-width:520px;margin:0 auto 22px;line-height:1.75}
 .hero-badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-.hbadge{font-size:11px;font-weight:500;padding:4px 12px;border-radius:2px;border:1px solid rgba(233,69,96,0.4);color:rgba(233,69,96,0.9);background:rgba(233,69,96,0.08)}
-/* CARD */
-.wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px}
-.card{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:28px;margin-bottom:20px}
-.card-title{font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--red);margin-bottom:20px;display:flex;align-items:center;gap:8px}
-.card-title::before{content:'';width:20px;height:2px;background:var(--red)}
-/* FORM */
+.hbadge{font-size:11px;font-weight:500;padding:4px 12px;border-radius:100px;border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.8)}
+.wrap{max-width:720px;margin:0 auto;padding:36px 20px 64px}
+.card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:28px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,48,73,0.06)}
+.card-lbl{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--navy);margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--red)}
 .fg{margin-bottom:18px}
 .fg label{display:block;font-size:13px;font-weight:500;color:var(--muted);margin-bottom:7px}
-.fg input,.fg select,.fg textarea{width:100%;padding:11px 14px;background:var(--bg);border:1px solid var(--border);border-radius:3px;font-size:14px;color:var(--text);font-family:'DM Sans',sans-serif;transition:border-color .2s}
-.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--red)}
+.fg input,.fg select,.fg textarea{width:100%;padding:11px 14px;background:var(--bg);border:1.5px solid var(--border);border-radius:5px;font-size:13px;color:var(--text);font-family:'Inter',sans-serif;transition:border-color .2s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:none;border-color:var(--navy)}
 .fg textarea{min-height:80px;resize:vertical}
-.fg select option{background:var(--bg)}
-.hint{font-size:11px;color:rgba(238,242,255,0.35);margin-top:4px}
-.run-btn{width:100%;padding:14px;background:var(--red);color:white;border:none;border-radius:3px;font-size:15px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;letter-spacing:.5px;transition:background .2s;margin-top:4px}
-.run-btn:hover{background:var(--red-dim)}
-/* RESULTS */
-.results{display:none}
-.results.show{display:block}
-.score-block{background:linear-gradient(135deg,var(--navy),#1a0f2e);border:1px solid rgba(233,69,96,0.3);border-radius:4px;padding:28px;text-align:center;margin-bottom:20px}
-.score-ring{display:inline-flex;align-items:center;justify-content:center;width:110px;height:110px;border-radius:50%;border:3px solid var(--red);margin-bottom:14px;position:relative}
-.score-num{font-family:'DM Serif Display',serif;font-size:42px;color:var(--red)}
-.score-label{font-size:11px;color:var(--muted);position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);white-space:nowrap}
-.score-title{font-family:'DM Serif Display',serif;font-size:22px;margin-bottom:8px}
-.score-verdict{font-size:13px;color:var(--muted);max-width:480px;margin:0 auto;line-height:1.7}
-.dim-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-bottom:20px}
-.dim{background:var(--surface);border:1px solid var(--border);border-radius:3px;padding:14px}
-.dim-name{font-size:11px;font-weight:600;letter-spacing:.5px;color:var(--muted);text-transform:uppercase;margin-bottom:8px}
-.dim-bar-track{height:4px;background:rgba(255,255,255,0.08);border-radius:2px;margin-bottom:6px;overflow:hidden}
-.dim-bar{height:100%;border-radius:2px;transition:width .8s ease}
-.dim-score{font-size:18px;font-weight:700;font-family:'DM Serif Display',serif}
-.dim-tag{font-size:10px;font-weight:600;letter-spacing:.5px;text-transform:uppercase}
-.act-block{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:22px;margin-bottom:20px}
-.act-block h3{font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--red);margin-bottom:16px}
-.act-item{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--border)}
-.act-item:last-child{border-bottom:none}
-.act-num{width:22px;height:22px;background:var(--red);color:white;border-radius:50%;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-.act-text{font-size:13px;line-height:1.65;color:rgba(238,242,255,0.85)}
-/* CTA */
-.cta-block{background:var(--surface2);border:1px solid rgba(233,69,96,0.25);border-radius:4px;padding:24px;text-align:center;margin-bottom:20px}
-.cta-block h3{font-family:'DM Serif Display',serif;font-size:20px;margin-bottom:8px}
-.cta-block p{font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.65;max-width:480px;margin-left:auto;margin-right:auto}
-.cta-btn{display:inline-block;background:var(--red);color:white;font-weight:700;font-size:14px;padding:12px 28px;border-radius:3px;text-decoration:none;letter-spacing:.3px}
-.cta-btn:hover{background:var(--red-dim)}
-.gpt-strip{background:rgba(255,255,255,0.03);border-radius:3px;padding:14px 16px;margin-top:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.gpt-strip p{font-size:12px;color:var(--muted);flex:1}
-.gpt-btn{background:transparent;border:1px solid var(--border);color:var(--text);padding:7px 16px;border-radius:3px;font-size:12px;font-weight:600;cursor:pointer;font-family:'DM Sans',sans-serif;white-space:nowrap}
-.gpt-btn:hover{border-color:var(--red);color:var(--red)}
-/* FOOTER */
+.hint{font-size:11px;color:#999;margin-top:4px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.run-btn{width:100%;padding:14px;background:var(--red);color:white;border:none;border-radius:5px;font-size:15px;font-weight:700;cursor:pointer;font-family:'Inter',sans-serif;letter-spacing:.3px;transition:background .2s}
+.run-btn:hover{background:var(--red2)}
+.results{display:none}.results.show{display:block}
+.score-block{background:var(--navy);color:white;border-radius:6px;padding:30px;text-align:center;margin-bottom:20px}
+.score-lbl{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:8px}
+.score-num{font-size:64px;font-weight:800;line-height:1;margin-bottom:4px}
+.score-grade{font-size:20px;font-weight:600;margin-bottom:12px}
+.score-vd{font-size:13px;color:rgba(255,255,255,0.68);max-width:480px;margin:0 auto;line-height:1.7}
+.dim-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:20px}
+.dim{background:var(--white);border:1px solid var(--border);border-radius:5px;padding:14px;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.dn{font-size:11px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.dt{height:5px;background:var(--light);border-radius:3px;overflow:hidden;margin-bottom:7px}
+.df{height:100%;border-radius:3px;transition:width .8s ease}
+.ds{font-size:22px;font-weight:800}
+.acts{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:22px;margin-bottom:20px;box-shadow:0 1px 4px rgba(0,0,0,0.04)}
+.acts-lbl{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--navy);margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--red)}
+.act{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);align-items:flex-start}
+.act:last-child{border-bottom:none}
+.an{width:26px;height:26px;background:var(--navy);color:white;border-radius:50%;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.at{font-size:13px;line-height:1.68;color:var(--text)}
+.cta-block{background:var(--light);border:1.5px solid var(--border);border-radius:6px;padding:24px;text-align:center;margin-bottom:20px}
+.cta-block h3{font-size:20px;font-weight:700;color:var(--navy);margin-bottom:8px}
+.cta-block p{font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.68;max-width:480px;margin-left:auto;margin-right:auto}
+.cta-a{display:inline-block;background:var(--red);color:white;font-weight:700;font-size:14px;padding:13px 28px;border-radius:5px;text-decoration:none}
+.cta-a:hover{background:var(--red2)}
+.gpt-strip{margin-top:14px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.gpt-strip p{font-size:12px;color:var(--muted)}
+.gpt-btn{background:white;border:1.5px solid var(--border);color:var(--navy);padding:7px 16px;border-radius:5px;font-size:12px;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif}
+.gpt-btn:hover{border-color:var(--navy)}
 .footer{text-align:center;padding:20px 0 0;border-top:1px solid var(--border)}
-.footer p{font-size:11px;color:rgba(238,242,255,0.3);line-height:1.8}
-.footer a{color:rgba(233,69,96,0.7);text-decoration:none}
-@media(max-width:480px){.hdr{padding:12px 16px}.hero{padding:36px 16px 32px}.wrap{padding:24px 16px 48px}.card{padding:20px}}
+.footer p{font-size:11px;color:#999;line-height:1.8}
+.footer a{color:var(--navy);text-decoration:none}
+@media(max-width:480px){.hero{padding:36px 16px 32px}.wrap{padding:24px 16px 48px}.card{padding:20px}.row2{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -99,112 +88,77 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);min
   <div class="eyebrow">Named IP · The Validation Gap</div>
   <h1>Find Your<br><em>Validation Gap</em></h1>
   <p>Most founders confuse interest with demand. This tool diagnoses the gap between what people say they want and what they will actually pay for — before you spend another month building.</p>
-  <div class="hero-badges"><span class="hbadge">Free</span><span class="hbadge">Instant</span><span class="hbadge">No Login</span><span class="hbadge">Sceamdo Framework</span></div>
+  <div class="hero-badges"><span class="hbadge">Free</span><span class="hbadge">Instant Results</span><span class="hbadge">No Login Required</span><span class="hbadge">Sceamdo Framework</span></div>
 </div>
 <div class="wrap">
 <div class="card">
-  <div class="card-title">Diagnose Your Validation</div>
-  <div class="fg"><label>Describe the problem your idea solves</label><textarea id="v1" placeholder="e.g. Logistics managers spend 4+ hours daily manually updating delivery status across three disconnected systems — leading to customer complaints and staff burnout"></textarea><div class="hint">Specificity is signal. Vague problems score low.</div></div>
-  <div class="fg"><label>What evidence of demand do you currently have?</label><select id="v2">
-    <option value="none">None — this is based on my own observation</option>
-    <option value="conversations">Informal conversations — people said it sounds good</option>
-    <option value="structured">10+ structured interviews — people described the pain specifically</option>
-    <option value="waitlist">Waitlist or sign-ups — people gave their email</option>
-    <option value="loi">Letters of Intent or signed pilots — people committed in writing</option>
-    <option value="revenue">Paying customers — people handed over money</option>
-  </select></div>
-  <div class="fg"><label>How do people currently solve this problem?</label><select id="v3">
-    <option value="nothing">They do nothing — they just live with it</option>
-    <option value="manual">Manual workaround — spreadsheets, emails, phone calls</option>
-    <option value="expensive">Expensive solution — agencies, consultants, enterprise software</option>
-    <option value="inferior">Inferior competitor — something exists but it is bad</option>
-    <option value="combination">Cobbling together multiple tools that do not integrate</option>
-  </select></div>
-  <div class="fg"><label>Have you asked a potential customer to pay for this?</label><select id="v4">
-    <option value="no">No — I have not asked anyone to pay yet</option>
-    <option value="asked_declined">Yes — I asked, they said not yet / maybe later</option>
-    <option value="asked_interested">Yes — I asked, they said yes in principle</option>
-    <option value="asked_paid">Yes — I asked and at least one person paid</option>
-  </select></div>
-  <div class="fg"><label>How urgent is this problem for your target customer?</label><select id="v5">
-    <option value="nice">Nice to have — they would fix it if it were free and easy</option>
-    <option value="annoying">Annoying — they complain about it but live with it</option>
-    <option value="costly">Costly — it causes measurable time or money loss regularly</option>
-    <option value="critical">Critical — it is causing them active pain right now</option>
-    <option value="bleeding">Bleeding — they are losing customers, revenue, or staff because of it</option>
-  </select></div>
-  <div class="fg"><label>How specific is your target customer?</label><select id="v6">
-    <option value="vague">Broad — anyone who might benefit</option>
-    <option value="demographic">Demographic — e.g. SME owners aged 30–50</option>
-    <option value="role">Role-specific — e.g. logistics managers at 3PL companies</option>
-    <option value="precise">Hyper-specific — I can name 20 companies and contacts right now</option>
-  </select></div>
-  <button class="run-btn" onclick="runDiag()">Diagnose My Validation Gap →</button>
+  <div class="card-lbl">Your Assessment</div>
+  
+<div class="fg"><label>Describe the problem your idea solves</label><textarea id="v1" placeholder="e.g. Logistics managers spend 4+ hours daily manually updating delivery status across three disconnected systems — leading to customer complaints and staff burnout"></textarea><div class="hint">Specificity scores higher. Numbers beat adjectives.</div></div>
+<div class="fg"><label>What evidence of demand do you currently have?</label><select id="v2"><option value="none">None — based on my own observation</option><option value="conversations">Informal conversations — people said it sounds good</option><option value="structured">10+ structured interviews — people described the pain specifically</option><option value="waitlist">Waitlist or sign-ups — people gave their email</option><option value="loi">Letters of Intent or signed pilots — people committed in writing</option><option value="revenue">Paying customers — people handed over money</option></select></div>
+<div class="fg"><label>How do people currently solve this problem?</label><select id="v3"><option value="nothing">They do nothing — they just live with it</option><option value="manual">Manual workaround — spreadsheets, emails, phone calls</option><option value="expensive">Expensive solution — agencies, consultants, enterprise software</option><option value="inferior">Inferior competitor — something exists but it is bad</option><option value="combination">Cobbling together multiple tools that do not integrate</option></select></div>
+<div class="fg"><label>Have you asked a potential customer to pay for this?</label><select id="v4"><option value="no">No — I have not asked anyone to pay yet</option><option value="asked_declined">Yes — I asked, they said not yet or maybe later</option><option value="asked_interested">Yes — I asked, they said yes in principle</option><option value="asked_paid">Yes — I asked and at least one person paid</option></select></div>
+<div class="fg"><label>How urgent is this problem for your target customer?</label><select id="v5"><option value="nice">Nice to have — they would fix it if it were free and easy</option><option value="annoying">Annoying — they complain about it but live with it</option><option value="costly">Costly — it causes measurable time or money loss regularly</option><option value="critical">Critical — it is causing them active pain right now</option><option value="bleeding">Bleeding — they are losing customers, revenue, or staff because of it</option></select></div>
+<div class="fg"><label>How specific is your target customer?</label><select id="v6"><option value="vague">Broad — anyone who might benefit</option><option value="demographic">Demographic — e.g. SME owners aged 30–50</option><option value="role">Role-specific — e.g. logistics managers at 3PL companies</option><option value="precise">Hyper-specific — I can name 20 companies and contacts right now</option></select></div>
+  <button class="run-btn" onclick="runTool()">Get My Results →</button>
 </div>
-
 <div class="results" id="results">
   <div class="score-block">
-    <div class="score-ring"><div class="score-num" id="rScore">0</div></div>
-    <div class="score-title" id="rTitle"></div>
-    <div class="score-verdict" id="rVerdict"></div>
+    <div class="score-lbl" id="rLbl">Score</div>
+    <div class="score-num" id="rScore" style="color:#FCBF49">—</div>
+    <div class="score-grade" id="rGrade"></div>
+    <div class="score-vd" id="rVd"></div>
   </div>
   <div class="dim-grid" id="rDims"></div>
-  <div class="act-block"><h3>Close Your Validation Gap — Priority Actions</h3><div id="rActs"></div></div>
+  <div class="acts"><div class="acts-lbl">Priority Actions</div><div id="rActs"></div></div>
   <div class="cta-block">
     <h3>Ready to Get Validated in 72 Hours?</h3>
     <p>SmartValidate™ delivers an expert-led validation report, startup valuation, investor-ready action map, and startup maturity heatmap — in 3 days from £199. Contractually guaranteed.</p>
-    <a class="cta-btn" href="https://sceamdo.com/smartvalidate/" target="_blank">Get SmartValidate™ — From £199 →</a>
+    <a class="cta-a" href="https://sceamdo.com/smartvalidate/" target="_blank">Get SmartValidate™ — From £199 →</a>
     <div class="gpt-strip">
-      <p>Want a detailed AI narrative on your specific validation situation?</p>
-      <button class="gpt-btn" onclick="openGPT()">Open in ChatGPT →</button>
+      <p>Want a detailed AI analysis of your specific situation?</p>
+      <button class="gpt-btn" onclick="openGPT()">Continue in ChatGPT →</button>
     </div>
   </div>
   <div class="footer"><p>Powered by VentureOS AI · Built by Sceamdo / ventureosai.com → / Mohammad Bukkar | Economic Systems Architect and Founder — Sceamdo · VentureOS AI · Bukkar Ltd<br><a href="https://sceamdo.com" target="_blank">sceamdo.com</a></p></div>
 </div>
 </div>
-
 <script>
+
 var _v={};
-function scEvidence(v){return{none:5,conversations:20,structured:50,waitlist:65,loi:82,revenue:100}[v]||5;}
-function scCurrent(v){return{nothing:30,manual:70,expensive:85,inferior:75,combination:65}[v]||30;}
-function scAsked(v){return{no:5,asked_declined:30,asked_interested:65,asked_paid:100}[v]||5;}
-function scUrgency(v){return{nice:15,annoying:35,costly:65,critical:85,bleeding:100}[v]||15;}
-function scSpecific(v){return{vague:10,demographic:35,role:70,precise:100}[v]||10;}
-function scProblem(v){if(!v||v.length<20)return 15;var s=30;['hours','days','%','£','$','per week','monthly','staff','customers','complaints'].forEach(function(w){if(v.toLowerCase().indexOf(w)>=0)s+=9;});['burning','losing','failing','broken','manual','wasting','cost'].forEach(function(w){if(v.toLowerCase().indexOf(w)>=0)s+=6;});if(v.length>120)s+=10;return Math.min(100,s);}
-function col(s){return s>=70?'var(--green)':s>=45?'var(--amber)':'var(--red)';}
+function scEv(v){return{none:5,conversations:20,structured:50,waitlist:65,loi:82,revenue:100}[v]||5;}
+function scCu(v){return{nothing:30,manual:70,expensive:85,inferior:75,combination:65}[v]||30;}
+function scAs(v){return{no:5,asked_declined:30,asked_interested:65,asked_paid:100}[v]||5;}
+function scUr(v){return{nice:15,annoying:35,costly:65,critical:85,bleeding:100}[v]||15;}
+function scSp(v){return{vague:10,demographic:35,role:70,precise:100}[v]||10;}
+function scPr(v){if(!v||v.length<20)return 15;var s=30;['hours','days','%','cost','week','monthly','staff','customers'].forEach(function(w){if(v.toLowerCase().indexOf(w)>=0)s+=8;});if(/[0-9]/.test(v))s+=15;if(v.length>120)s+=10;return Math.min(100,s);}
+function col(s){return s>=70?'#1A7A3E':s>=45?'#B8860B':'#C0392B';}
 function tag(s){return s>=70?'Validated':s>=45?'Developing':'Gap';}
-function runDiag(){
-  var p=document.getElementById('v1').value.trim(),e=document.getElementById('v2').value,c=document.getElementById('v3').value,a=document.getElementById('v4').value,u=document.getElementById('v5').value,sp=document.getElementById('v6').value;
+function runTool(){
+  var p=document.getElementById('v1').value.trim();
   if(!p){alert('Please describe the problem your idea solves.');return;}
-  _v={p:p,e:e,c:c,a:a,u:u,sp:sp};
-  var dims={problem:scProblem(p),evidence:scEvidence(e),current:scCurrent(c),asked:scAsked(a),urgency:scUrgency(u),specific:scSpecific(sp)};
-  var weights={problem:20,evidence:22,current:15,asked:20,urgency:13,specific:10};
-  var total=0;Object.keys(dims).forEach(function(k){total+=dims[k]*weights[k]/100;});total=Math.round(total);
-  var titles={high:'Strong Validation Foundation',mid:'Partial Validation — Gap Identified',low:'Significant Validation Gap'};
-  var verdicts={
-    high:'Your validation signals are strong. You have moved beyond assumption into evidence. The next step is converting that evidence into paid commitments — even at pilot pricing.',
-    mid:'You have some signal but a meaningful gap between interest and committed demand. This is the most dangerous zone — enough validation to feel confident, not enough to build on safely.',
-    low:'You are operating on assumption. The gap between what you believe and what customers have confirmed is wide. Every week spent building before closing this gap is risk compounding.'
-  };
-  var tier=total>=68?'high':total>=42?'mid':'low';
-  document.getElementById('rScore').textContent=total;
-  document.getElementById('rScore').style.color=col(total);
-  document.getElementById('rTitle').textContent=titles[tier];
-  document.getElementById('rVerdict').textContent=verdicts[tier];
-  var dlabels={problem:'Problem Specificity',evidence:'Demand Evidence',current:'Competitive Vacuum',asked:'Payment Tested',urgency:'Pain Urgency',specific:'Customer Precision'};
-  document.getElementById('rDims').innerHTML=Object.keys(dims).map(function(k){var sc=dims[k],cl=col(sc);return '<div class="dim"><div class="dim-name">'+dlabels[k]+'</div><div class="dim-bar-track"><div class="dim-bar" style="width:'+sc+'%;background:'+cl+'"></div></div><div style="display:flex;justify-content:space-between;align-items:center"><div class="dim-score" style="color:'+cl+'">'+sc+'</div><div class="dim-tag" style="color:'+cl+'">'+tag(sc)+'</div></div></div>';}).join('');
+  _v={p:p,e:document.getElementById('v2').value,c:document.getElementById('v3').value,a:document.getElementById('v4').value,u:document.getElementById('v5').value,sp:document.getElementById('v6').value};
+  var dims={problem:scPr(p),evidence:scEv(_v.e),current:scCu(_v.c),asked:scAs(_v.a),urgency:scUr(_v.u),specific:scSp(_v.sp)};
+  var w={problem:20,evidence:22,current:15,asked:20,urgency:13,specific:10};
+  var tot=0;Object.keys(dims).forEach(function(k){tot+=dims[k]*w[k]/100;});tot=Math.round(tot);
+  var grade=tot>=68?'Strong Validation Foundation':tot>=42?'Partial Validation — Gap Identified':'Significant Validation Gap';
+  var vd=tot>=68?'Your validation signals are strong. The next step is converting evidence into paid commitments — even at pilot pricing.':tot>=42?'You have some signal but a meaningful gap between interest and committed demand. This is the most dangerous zone — enough to feel confident, not enough to build on safely.':'You are operating on assumption. Every week spent building before closing this gap is risk compounding.';
+  document.getElementById('rLbl').textContent='Validation Score — out of 100';
+  document.getElementById('rScore').textContent=tot;document.getElementById('rGrade').textContent=grade;document.getElementById('rVd').textContent=vd;
+  var dlbls={problem:'Problem Specificity',evidence:'Demand Evidence',current:'Competitive Vacuum',asked:'Payment Tested',urgency:'Pain Urgency',specific:'Customer Precision'};
+  document.getElementById('rDims').innerHTML=Object.keys(dims).map(function(k){var sc=dims[k],cl=col(sc);return '<div class="dim"><div class="dn">'+dlbls[k]+'</div><div class="dt"><div class="df" style="width:'+sc+'%;background:'+cl+'"></div></div><div style="display:flex;justify-content:space-between"><div class="ds" style="color:'+cl+'">'+sc+'</div><div style="font-size:11px;font-weight:600;color:'+cl+'">'+tag(sc)+'</div></div></div>';}).join('');
   var acts=[];
-  if(dims.evidence<50)acts.push('Run 10 structured customer discovery interviews this week. Prepare 5 questions: What is the biggest challenge with X? How do you currently handle it? What have you tried? What did it cost? Would you pay to fix it?');
-  if(dims.asked<60)acts.push('Ask a real prospect to pay — even £1 for a waiting list spot or 50% prepayment for a pilot. A verbal yes is not validation. Money changing hands is.');
-  if(dims.specific<60)acts.push('Narrow your customer definition to a named segment. Replace "SME owners" with "Operations Directors at 20–100 person logistics companies." Then list 15 names from LinkedIn.');
-  if(dims.urgency<60)acts.push('Quantify the pain. Interview 5 customers and ask: how many hours per week does this cost you? What has it cost you in the last 12 months in lost revenue or extra headcount?');
-  if(dims.problem<60)acts.push('Rewrite your problem statement with real numbers. "People waste time" is not a problem statement. "Logistics managers lose 4.5 hours daily to manual status updates, costing £28K/yr per manager" is.');
+  if(dims.evidence<50)acts.push('Run 10 structured customer discovery interviews this week. Ask: What is the biggest challenge with X? How do you handle it now? What have you tried? What did it cost? Would you pay to fix it?');
+  if(dims.asked<60)acts.push('Ask a real prospect to pay — even a 50% prepayment for a pilot. A verbal yes is not validation. Money changing hands is.');
+  if(dims.specific<60)acts.push('Narrow your customer definition to a named segment. Replace "SME owners" with "Operations Directors at 20–100 person logistics companies" and list 15 names from LinkedIn.');
+  if(dims.urgency<60)acts.push('Quantify the pain in money: ask 5 customers how many hours per week this problem costs them and what it has cost them in the last 12 months in lost revenue or extra headcount.');
+  if(dims.problem<60)acts.push('Rewrite your problem statement with real numbers. "Logistics managers lose 4.5 hours daily to manual status updates, costing £28K per year per manager" is a problem statement. "People waste time" is not.');
   if(acts.length===0)acts.push('Your validation is strong. Build a detailed case study from your best customer conversation and use it as your investor proof point and your first LinkedIn post.');
-  document.getElementById('rActs').innerHTML=acts.slice(0,3).map(function(a,i){return '<div class="act-item"><div class="act-num">'+(i+1)+'</div><div class="act-text">'+a+'</div></div>';}).join('');
+  document.getElementById('rActs').innerHTML=acts.slice(0,3).map(function(a,i){return '<div class="act"><div class="an">'+(i+1)+'</div><div class="at">'+a+'</div></div>';}).join('');
   var r=document.getElementById('results');r.classList.add('show');setTimeout(function(){r.scrollIntoView({behavior:'smooth',block:'start'});},100);
 }
 function openGPT(){
-  var parts=['Sceamdo Validation Gap Finder Score: '+document.getElementById('rScore').textContent+'/100','Problem: '+_v.p,'Evidence level: '+_v.e,'Current solution: '+_v.c,'Payment test: '+_v.a,'Urgency: '+_v.u,'Customer specificity: '+_v.sp,'','Please give me: 1) An honest assessment of my validation gap and what specifically is missing. 2) The exact 5 questions I should ask my next 10 customer interviews. 3) How I would recognise real validated demand vs polite interest. 4) What a minimum viable validation standard looks like for a business at my stage.'];
+  var parts=['Sceamdo Validation Gap Finder — Score: '+document.getElementById('rScore').textContent+'/100','Problem described: '+_v.p,'Evidence level: '+_v.e,'Current solution: '+_v.c,'Payment test: '+_v.a,'Urgency: '+_v.u,'Customer specificity: '+_v.sp,'','Please give me: 1) An honest assessment of my validation gap and what is specifically missing. 2) The exact 5 questions I should ask my next 10 customer interviews. 3) How I would recognise real validated demand vs polite interest. 4) What a minimum viable validation standard looks like for a business at my stage.'];
   window.open('https://chat.openai.com/?q='+encodeURIComponent(parts.join('\n')),'_blank');
 }
 </script>
